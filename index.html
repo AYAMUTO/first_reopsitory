@@ -13,21 +13,21 @@
 <body>
     <iframe id="mainContents" src="" frameborder="0" height="800" width="800"></iframe>
     <script>
-	    var now = new Date();
-	    var hour = now.getHours();
+        var now = new Date();
+        var hour = now.getHours();
         var pagename = "";
-        	
-	    var present_date = new Date("2017/10/14 20:00:00");
+            
+        var present_date = new Date("2017/10/14 20:00:00");
 
         // ゲームが終わるまで
-	    if(present_date >= now){
-	        pagename = "question";
-	
-	    // ゲーム終了後
-	    } else {
-	        pagename = "present";
-	
-	    }
+        if(present_date >= now){
+            pagename = "question";
+    
+        // ゲーム終了後
+        } else {
+            pagename = "present";
+    
+        }
         location.href = "https://ayamuto.github.io/first_reopsitory/contents/" + pagename + ".html";
     </script>
 </body>
